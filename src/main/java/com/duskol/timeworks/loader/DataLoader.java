@@ -4,6 +4,8 @@ import com.duskol.timeworks.model.Developer;
 import com.duskol.timeworks.model.Project;
 import com.duskol.timeworks.model.TimeWork;
 import com.duskol.timeworks.repository.ProjectRepository;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import reactor.core.publisher.Mono;
@@ -16,9 +18,15 @@ public class DataLoader implements CommandLineRunner {
 
     private ProjectRepository projectRepository;
 
+    @Autowired
     public DataLoader(ProjectRepository projectRepository) {
         this.projectRepository = projectRepository;
     }
+    
+    
+    // save developers and projects
+    
+    
 
     @Override
     public void run(String... args) {

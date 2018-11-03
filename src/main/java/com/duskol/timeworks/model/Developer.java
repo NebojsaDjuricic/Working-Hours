@@ -12,18 +12,46 @@ import java.util.List;
 @NoArgsConstructor
 public class Developer {
 
-    public Developer(String string, List<TimeWork> asList) {
-		// TODO Auto-generated constructor stub
-	}
+	//mozda id
+	
 	@NonNull
     private String username;
     private List<TimeWork> timeWorks;
-	public Object getUsername() {
-		// TODO Auto-generated method stub
-		return null;
+    private Project project;
+    
+	public Developer(String user, List<TimeWork> twList) {
+		this.username = user;
+		this.timeWorks = twList;
 	}
+	
+	public Developer(String user, List<TimeWork> twList, Project proj) {
+		this.username = user;
+		this.timeWorks = twList;
+		this.project = proj;
+	}
+    
+    public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
 	public List<TimeWork> getTimeWorks() {
-		// TODO Auto-generated method stub
-		return null;
+		return timeWorks;
 	}
+
+	public void setTimeWorks(List<TimeWork> timeWorks) {
+		this.timeWorks = timeWorks;
+	}
+
+	public Project getProject() {
+		return project;
+	}
+
+	public void setProject(Project project) {
+		this.project = project;
+	}  
+    
 }

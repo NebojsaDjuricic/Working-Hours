@@ -20,6 +20,7 @@ import javax.validation.constraints.NotNull;
 @Slf4j
 @RestController
 @RequestMapping(value = "/projects")
+@CrossOrigin(origins = "http://localhost:3000") 
 public class ProjectController {
 
     private ProjectService projectService;
