@@ -30,7 +30,7 @@ public class ProjectServiceImpl implements ProjectService {
         return projectRepository.findByIdAndDevelopersNotIn(id, developer)
                 .switchIfEmpty(fallback)
                 .flatMap(existingProject-> {
-              //      existingProject.getDevelopers().add(developer);
+                    existingProject.getDevelopers().add(developer);
                     return projectRepository.save(existingProject);
                 });
     }
