@@ -43,7 +43,9 @@ export default class Developers extends Component {
            <div id="divUpDev">
               <div id="titleDev">
                 <h1>Developers overview</h1>
-                <a href="http://localhost:3000/projects" class="btn btn-info" role="button">Projects</a>
+                <a href="http://localhost:3000/" id="btnDevHome" className="btn btn-info" role="button">Home</a>
+                <a href="http://localhost:3000/projects" id="btnDevProj" className="btn btn-info" role="button">Projects</a>
+                <a href="http://localhost:3000/reports" id="btnDevRep" className="btn btn-info" role="button">Reports</a>
               </div>
            </div>
 

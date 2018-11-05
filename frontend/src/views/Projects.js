@@ -45,7 +45,9 @@ export default class Projects extends Component {
           <div id="divUpProj">
             <div id="titleProj">
                <h1>Projects overview</h1>
-               <a href="http://localhost:3000/developers" className="btn btn-info" role="button">Developers</a>
+               <a href="http://localhost:3000/" id="btnProjHome" className="btn btn-info" role="button">Home</a>
+               <a href="http://localhost:3000/developers" id="btnProjDev" className="btn btn-info" role="button">Developers</a>
+               <a href="http://localhost:3000/reports" id="btnProjRep" className="btn btn-info" role="button">Reports</a>
             </div>
           </div>
 

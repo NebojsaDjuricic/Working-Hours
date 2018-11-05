@@ -18,7 +18,7 @@ export default class Home extends Component {
           <div className="home">
             <div className="text center">
               <h1>Working Hours</h1>
-              </div>
+            </div>
           </div>
 
           <div id="down">

@@ -128,11 +128,12 @@ html, body {
   font-size: 23px;
   font-weight: 700;
   transition: background-color .2s;
-  color: #000000;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #5bc0de;
   vertical-align: middle;
   position: relative;
   top: 43px;
+  transition-duration: 0.4s;
 
 }
 
@@ -153,11 +154,27 @@ html, body {
       font-size: 23px;
       font-weight: 700;
       transition: background-color .2s;
-      color: #000000;
-      background-color: #ffffff;
+      color: #ffffff;
+      background-color: #5bc0de;
       vertical-align: middle;
       position: relative;
       top: 43px;
+      transition-duration: 0.4s;
+}
+
+#btnProj:hover {
+   background-color: #4CAF50;
+   color: white;
+}
+
+#btnDev:hover {
+   background-color: #4CAF50;
+   color: white;
+}
+
+#btnRep:hover {
+   background-color: #4CAF50;
+   color: white;
 }
 
 #btnProj, #btnDev, #btnRep a {
@@ -259,17 +276,76 @@ html, body {
    overflow-x: hidden;
 }
 
+#btnProjHome, #btnDevHome {
+   position: absolute;
+   top: 13%;
+   right: 20%;
+}
 
-#titleProj a {
+#btnProjDev {
+   position: absolute;
+   top: 13%;
+   right: 12%;
+}
+
+#btnProjRep, #btnDevRep {
    position: absolute;
    top: 13%;
    right: 5%;
 }
 
-#titleDev a {
+#btnDevProj {
    position: absolute;
    top: 13%;
-   right: 5%;
+   right: 12.5%;
+}
+
+#btnProjHome:hover {
+   background-color: #4CAF50;
+   color: white;
+   -webkit-transform: scale(1.3);
+   -ms-transform: scale(1.3);
+   transform: scale(1.3);
+}
+
+#btnProjDev:hover {
+   background-color: #4CAF50;
+   color: white;
+   -webkit-transform: scale(1.3);
+   -ms-transform: scale(1.3);
+   transform: scale(1.3);
+}
+
+#btnProjRep:hover {
+   background-color: #4CAF50;
+   color: white;
+   -webkit-transform: scale(1.3);
+   -ms-transform: scale(1.3);
+   transform: scale(1.3);
+}
+
+#btnDevHome:hover {
+   background-color: #4CAF50;
+   color: white;
+   -webkit-transform: scale(1.3);
+   -ms-transform: scale(1.3);
+   transform: scale(1.3);
+}
+
+#btnDevProj:hover {
+   background-color: #4CAF50;
+   color: white;
+   -webkit-transform: scale(1.3);
+   -ms-transform: scale(1.3);
+   transform: scale(1.3);
+}
+
+#btnDevRep:hover {
+   background-color: #4CAF50;
+   color: white;
+   -webkit-transform: scale(1.3);
+   -ms-transform: scale(1.3);
+   transform: scale(1.3);
 }
 
 .row {
@@ -292,7 +368,10 @@ html, body {
    top: 1px;
    content: 'Add new project';
    display: block;
-  line-height: initial;
+   line-height: initial;
+   height: 23px;
+   font-size: 15px;
+   vertical-align: middle;
 
 }
 
@@ -302,11 +381,39 @@ html, body {
    top: 1px;
    content: 'Add new developer';
    display: block;
-  line-height: initial;
+   line-height: initial;
+   height: 23px;
+   font-size: 15px;
+   vertical-align: middle;
 }
 
+.react-bs-table-add-btn:hover {
+   background-color: #4CAF50;
+   color: white;
+   -webkit-transform: scale(1.3);
+   -ms-transform: scale(1.3);
+   transform: scale(1.3);
+}
 
+.btn-primary {
+   background-color: #5bc0de;
+}
 
+.btn-primary:hover {
+   background-color: #4CAF50;
+   color: white;
+   -webkit-transform: scale(1.3);
+   -ms-transform: scale(1.3);
+   transform: scale(1.3);
+}
+
+.btn-secondary:hover {
+   background-color: #e60000;
+   color: white;
+   -webkit-transform: scale(1.3);
+   -ms-transform: scale(1.3);
+   transform: scale(1.3);
+}
 
 /* desktop */
 @media only screen and (min-width: 1441px) {
@@ -383,6 +490,31 @@ html, body {
         width: 65%;
         font-size: 19px;
   }
+
+  #btnProjHome, #btnDevHome {
+     position: absolute;
+     top: 13%;
+     right: 23%;
+  }
+
+  #btnProjDev {
+     position: absolute;
+     top: 13%;
+     right: 13%;
+  }
+
+  #btnProjRep, #btnDevRep {
+     position: absolute;
+     top: 13%;
+     right: 5%;
+  }
+
+  #btnDevProj {
+     position: absolute;
+     top: 13%;
+     right: 14%;
+ }
+
 }
 
 /* tablets */
@@ -405,6 +537,31 @@ html, body {
         width: 75%;
         font-size: 17px;
   }
+
+  #btnProjHome, #btnDevHome {
+     position: absolute;
+     top: 13%;
+     right: 32%;
+  }
+
+  #btnProjDev {
+     position: absolute;
+     top: 13%;
+     right: 17%;
+  }
+
+  #btnProjRep, #btnDevRep {
+     position: absolute;
+     top: 13%;
+     right: 5%;
+  }
+
+  #btnDevProj {
+     position: absolute;
+     top: 13%;
+     right: 18.5%;
+ }
+
 }
 
 /* tablets */

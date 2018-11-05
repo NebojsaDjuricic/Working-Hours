@@ -4,7 +4,7 @@ import axios from 'axios';
 import Add from './Add';
 import Update from './Update';
 import Delete from './Delete';
-import styles from '../css/App.css';
+import '../css/App.css';
 import {BrowserRouter, Route} from 'react-router-dom';
 import Home from '../views/Home';
 import Developers from '../views/Developers';
@@ -13,7 +13,6 @@ import Reports from '../views/Reports';
 import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
 import 'react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
 
-//import img from '../images/background.jpg';
 
 export default class App extends React.Component {
   render() {
