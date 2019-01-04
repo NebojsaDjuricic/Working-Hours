@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
+Built-By: Korisnik
+Build-Jdk: 10.0.2
 Implementation-Title: time-works
 Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: Korisnik
 Implementation-Vendor-Id: com.duskol
-Build-Jdk: 1.8.0_181
 Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
  ot-starter-parent/time-works
 Created-By: Maven Integration for Eclipse

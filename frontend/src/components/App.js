@@ -1,9 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import axios from 'axios';
-import Add from './Add';
-import Update from './Update';
-import Delete from './Delete';
 import '../css/App.css';
 import {BrowserRouter, Route} from 'react-router-dom';
 import Home from '../views/Home';
@@ -32,7 +27,7 @@ export default class App extends React.Component {
             </div>
           )}/>
           <Route exact={true} path='/developers' render={() => (
-            <div className="App">
+            <div className="Developeri">
               <Developers />
             </div>
           )}/>

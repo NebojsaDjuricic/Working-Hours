@@ -1,18 +1,19 @@
 package com.duskol.timeworks.model;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
 
+import java.io.Serializable;
 import java.util.List;
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-public class Developer {
+import org.springframework.data.mongodb.core.mapping.Document;
 
-	//mozda id
+@SuppressWarnings("serial")
+@Document(collection = "developers")
+@Data
+@NoArgsConstructor
+public class Developer implements Serializable {
 	
 	@NonNull
     private String username;
@@ -52,6 +53,10 @@ public class Developer {
 
 	public void setProject(Project project) {
 		this.project = project;
+		
+		if(project!=null && !project.getDevelopers().contains(this)){
+			project.getDevelopers().add(this);
+		}
 	}  
     
 }

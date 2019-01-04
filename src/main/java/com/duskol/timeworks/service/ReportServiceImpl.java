@@ -33,8 +33,8 @@ public class ReportServiceImpl implements ReportService {
                 .map(existingProject-> {
 
                     ReportByProjctAndDeveloperDto dto = new ReportByProjctAndDeveloperDto();
-           //         dto.setProjectDto(new ProjectDto(existingProject.getId(), existingProject.getTitle()));
-         //           dto.setDeveloperDto(getDeveloper(existingProject.getDevelopers(), username));
+                    dto.setProjectDto(new ProjectDto(existingProject.getId(), existingProject.getTitle()));
+                    dto.setDeveloperDto(getDeveloper(existingProject.getDevelopers(), username));
                     return dto;
                 });
     }
@@ -69,7 +69,7 @@ public class ReportServiceImpl implements ReportService {
         // Parse times and sum hours, minutes, and seconds
         int hour = 0, minute = 0, second = 0;
         for (TimeWork timeWork : timeWorks) {
-            String time = timeWork.getHoursOnProject();
+            String time = Integer.toString(timeWork.getMinutesOnProject());
             Matcher m = timePattern.matcher(time);
             if (! m.matches())
                 throw new IllegalArgumentException("Invalid time: " + time);

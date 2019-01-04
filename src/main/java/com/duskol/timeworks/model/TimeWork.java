@@ -1,7 +1,6 @@
 package com.duskol.timeworks.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
@@ -10,36 +9,28 @@ import java.util.Date;
 
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
 public class TimeWork {
 
 	@NonNull
     @JsonFormat(pattern = "dd-MM-yyyy")
     private Date dateOfCharge;
 
-    @NonNull
-    //@DateTimeFormat(style = "hh:ss:mm")
-    private String hoursOnProject;
+    @NonNull  
+    private int minutesOnProject;
     
-    private float hop;
-    
-    public TimeWork(Date date, String hours) {
+
+    public TimeWork(Date date, int mins) {
 		this.dateOfCharge = date;
-		this.hoursOnProject = hours;
-	}
-    
-    public TimeWork(Date date, float hours) {
-		this.dateOfCharge = date;
-		this.hop = hours;
+		this.minutesOnProject = mins;
 	}
     
 
-	public float getHop() {
-		return hop;
+	public int getMinutesOnProject() {
+		return minutesOnProject;
 	}
 
-	public void setHop(float hop) {
-		this.hop = hop;
+	public void setMinutesOnProject(int mins) {
+		this.minutesOnProject = mins;
 	}
 
 	public Date getDateOfCharge() {
@@ -50,12 +41,6 @@ public class TimeWork {
 		this.dateOfCharge = dateOfCharge;
 	}
 
-	public String getHoursOnProject() {
-		return hoursOnProject;
-	}
 
-	public void setHoursOnProject(String hoursOnProject) {
-		this.hoursOnProject = hoursOnProject;
-	}
 
 }

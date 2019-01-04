@@ -44,7 +44,7 @@ public class ProjectServiceImpl implements ProjectService {
         return projectRepository.findByIdAndDevelopersUsername(id, username)
                 .switchIfEmpty(fallback)
                 .flatMap(existingProject-> {
-             //       existingProject.getDevelopers().stream().filter(d -> username.equalsIgnoreCase(d.getUsername())).findFirst().get().getTimeWorks().add(timeWork);
+                    existingProject.getDevelopers().stream().filter(d -> username.equalsIgnoreCase(d.getUsername())).findFirst().get().getTimeWorks().add(timeWork);
                     return projectRepository.save(existingProject);
                 });
     }
@@ -66,4 +66,7 @@ public class ProjectServiceImpl implements ProjectService {
         return projectRepository.findById(id)
                 .switchIfEmpty(fallback);
     }
+
+
+	
 }

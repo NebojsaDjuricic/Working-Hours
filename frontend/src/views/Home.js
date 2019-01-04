@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-//import Button from '@material-ui/core/Button';
-import Button from 'react-bootstrap/lib/Button';
 
 export default class Home extends Component {
   state = {

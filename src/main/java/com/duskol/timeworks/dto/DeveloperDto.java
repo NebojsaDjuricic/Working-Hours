@@ -10,5 +10,5 @@ import lombok.NoArgsConstructor;
 public class DeveloperDto {
 
     private String username;
-    private String totalHoursWorked;
+    private int totalMinutesWorked;
 }
